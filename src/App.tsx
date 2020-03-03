@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import me from './assets/me.jpg'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-inner">
+        <div className="App-column-left">
+          <h1>Hi! my name is Rob.</h1>
+          <h2>
+            philosophical
+            <br />
+            programmer who thinks too much
+            <br />
+            so writes poems instead
+          </h2>
+          <h2>vers. 37</h2>
+        </div>
+        <div className="App-column-right">
+          <img className="me" src={me} />
+        </div>
+      </div>
+      <div className="App-nav">
+        <h2>
+          Current Project: <i>philosophy</i>
+        </h2>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
